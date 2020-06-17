@@ -1,0 +1,194 @@
+// header
+
+.header {
+  & .container {
+    max-width: 1405px;
+    margin: 0 auto;
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 25px 0;
+    align-items: center;
+  }
+  &-phone-num {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  &-links .make-order {
+    margin-left: 30px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 20px 90px;
+    border: 2px solid #ff213b;
+    border-radius: 40px;
+  }
+}
+
+// banner
+
+.banner {
+  background-image: url(../img/banner-bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  & .container {
+    max-width: 1405px;
+    margin: 0 auto;
+    display: flex;
+    & .form {
+      padding: 150px 0 180px 140px;
+      & form p {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        color: white;
+        margin: 36px 0 20px 0;
+      }
+      & form input {
+        width: 400px;
+        padding: 25px 0 25px 20px;
+        outline: none;
+        &::placeholder {
+          color: black;
+          font-family: "Muller";
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+      & form button {
+        width: 345px;
+        background-color: #ff213b;
+        margin-top: 60px;
+        padding: 30px;
+        text-align: center;
+        color: white;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+      }
+    }
+  }
+  &-text {
+    padding: 0 0px 240px 0;
+
+    & nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      width: 830px;
+      margin: 0;
+      padding: 0 0 150px 0;
+      & li {
+        padding: 50px 20px;
+      }
+      & li:hover {
+        padding: 50px 20px;
+        background-color: #ff213b;
+      }
+      & li:hover a {
+        color: white;
+      }
+      & li + li {
+        margin-left: 50px;
+      }
+      & a {
+        text-decoration: none;
+        color: black;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+      }
+    }
+  }
+  &-title {
+    width: 700px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    margin: 0;
+    & span {
+      color: #ff213b;
+    }
+  }
+  &-subtitle {
+    font-family: "Muller";
+    font-weight: 400;
+    font-size: 24px;
+    width: 700px;
+  }
+}
+
+
+// advantages
+
+.advantages {
+    background-color: white;
+    & .container{
+        max-width: 1405px;
+        margin: 0 auto;
+    }
+    &-title {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 900;
+        font-size: 50px;
+        text-align: center;
+        margin: 165px 0 70px 0;
+    }
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        
+    }
+    &-image {
+        margin-right: 150px;
+    }
+    &-list div + div {
+        margin-top: 100px;
+    }
+    &-item {
+        position: relative;
+        & img {
+            position: absolute;
+            left: -75px;
+        }
+        & h3 {
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 900;
+            font-size: 30px;
+            margin: 0 0 50px 0;
+            &::after {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 98px;
+                border-bottom: 10px solid #ff213b;
+                top: 50px;
+                
+            }
+        }
+        
+        & p {
+            font-family: "Muller";
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// font-family: 'Fira Sans', sans-serif;
+// font-family: 'Montserrat', sans-serif;
