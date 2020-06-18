@@ -9,11 +9,14 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="icon" href="favicon.ico">
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800;900&family=Montserrat:wght@400;800&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,7 +27,7 @@
                 <a href="#" class="logo"><img src="./img/logo.png" alt="logo"></a>
                 <div class="header-links">
                     <a href="tel:+38 (099) 999 99 99" class="header-phone-num">+38 (099) 999 99 99</a>
-                    <a href="#" class="make-order">Заказать</a>
+                    <button id='myBtn' class="make-order">Заказать</button>
                 </div>
             </div>
         </div>
@@ -32,14 +35,15 @@
 
     <main>
         <section class="banner">
+
             <div class="container">
                 <div class="banner-text">
                     <nav>
                         <ul class="nav-list">
-                            <li class="list-item"><a href="" class="item-link">Стоимость</a></li>
-                            <li class="list-item"><a href="" class="item-link">Законность</a></li>
-                            <li class="list-item"><a href="" class="item-link">Доставка и оплата</a></li>
-                            <li class="list-item"><a href="" class="item-link">Отзывы</a></li>
+                            <li class="list-item"><a href="#costs" class="item-link">Стоимость</a></li>
+                            <li class="list-item"><a href="#advantages" class="item-link">Законность</a></li>
+                            <li class="list-item"><a href="#costs" class="item-link">Доставка и оплата</a></li>
+                            <li class="list-item"><a href="#reviews" class="item-link">Отзывы</a></li>
                         </ul>
                     </nav>
                     <h1 class="banner-title"><span>Lorem, ipsum</span> dolor sit amet consectetur</h1>
@@ -60,7 +64,7 @@
             </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" id="advantages">
             <div class="container">
                 <h2 class="advantages-title">Преимущества</h2>
                 <div class="advantages-wrapper">
@@ -82,20 +86,92 @@
                         <div class="advantages-item">
                             <img src="./img/business.png" alt="business">
                             <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nisi. Ipsa consequatur officia odit eveniet!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nisi. Ipsa consequatur
+                                officia odit eveniet!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="costs" id="costs">
+            <div class="container">
+                <div class="modal" id="myModal">
+                    <form action="" class="modal-form">
+                        <div class="form-wrapper">
+                            <h3 class="title">Заявка</h3>
+                            <span class="close"><img src="./img/close.png" alt="close"></span>
+                            <input type="text" placeholder="Имя">
+
+                            <input type="text" placeholder="Телефон">
+
+                            <input type="text" placeholder="Ваши номера">
+                            <button class="form-btn-accept">Заказать</button>
+                        </div>
+                    </form>
+                </div>
+                <h2 class="costs-title">Стоимость</h2>
+                <div class="costs-wrapper">
+                    <div class="costs-item">
+                        <h2 class="costs-item-title">Lorem Ipsum</h2>
+                        <ul class="costs-list">
+                            <li class="costs-list-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Magnam, cumque aperiam eos possimus veniam iusto.</li>
+                            <li class="costs-list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+                                modi enim, cumque magni quasi magnam perferendis.</li>
+                            <li class="costs-list-item">Lorem ipsum dolor sit amet consectetur</li>
+                        </ul>
+                        <span>399 грн</span>
+                        <p class="costs-price"><span>299</span>грн</p>
+                        <button class="costs-btn">Заказать</button>
+                    </div>
+                    <div class="costs-item">
+                        <h2 class="costs-item-title">Lorem Ipsum</h2>
+                        <ul class="costs-list">
+                            <li class="costs-list-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Magnam, cumque aperiam eos possimus veniam iusto.</li>
+                            <li class="costs-list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+                                modi enim, cumque magni quasi magnam perferendis.</li>
+                            <li class="costs-list-item">Lorem ipsum dolor sit amet consectetur</li>
+                        </ul>
+                        <span>599 грн</span>
+                        <p class="costs-price"><span>499</span>грн</p>
+                        <button class="costs-btn">Заказать</button>
+
+                    </div>
+                </div>
+                <p class="costs-info"><span>*</span>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+
+            <div class="container">
+                <h2 class="reviews-title">Отзывы</h2>
+                <div class="reviews-slider">
+                    <div class="slide"><img src="./img/rewiew.png" alt="rewiew"></div>
+                    <div class="slide"><img src="./img/rewiew.png" alt="rewiew"></div>
+                    <div class="slide"><img src="./img/rewiew.png" alt="rewiew"></div>
+                    <div class="slide"><img src="./img/rewiew.png" alt="rewiew"></div>
+                    <div class="slide"><img src="./img/rewiew.png" alt="rewiew"></div>
+                    <div class="slide"><img src="./img/rewiew.png" alt="rewiew"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="ba-footer">
+    <footer class="footer">
         <div class="container">
-
+            <a href="" class="footer-logo"><img src="./img/logo2.png" alt="logo2"></a>
+            <a href="" class="footer-up-arrow" onclick="return up()">Наверх</a>
         </div>
     </footer>
 
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
