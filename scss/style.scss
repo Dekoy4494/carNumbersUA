@@ -68,7 +68,7 @@
           font-size: 18px;
         }
       }
-      & form button {
+      & form .submit {
         width: 345px;
         background-color: #ff213b;
         margin-top: 60px;
@@ -272,7 +272,6 @@
   }
 
   &-info {
-    
     margin-top: 85px;
     font-family: "Muller";
     font-weight: 400;
@@ -409,6 +408,67 @@
   }
 }
 
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+  & .form-wrapper {
+    position: relative;
+    text-align: center;
+    background-image: url(../img/celebrate.png);
+    background-position: center;
+    background-color: white;
+    max-width: 675px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 550px;
+    & span {
+      background: none;
+      border: none;
+      position: absolute;
+      right: 25px;
+      top: 30px;
+      outline: none;
+    }
+    & > img {
+      margin: 100px 0;
+    }
+    & .modal-title {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 800;
+      font-size: 41px;
+      margin: 0;
+    }
+    & p {
+      font-family: "Muller";
+      font-weight: 400;
+      font-size: 22px;
+    }
+    & ul {
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      list-style: none;
+      margin-top: 40px;
+      & li + li {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
 // media
 
 @media screen and (max-width: 767px) {
@@ -498,6 +558,7 @@
     &-text {
       padding: 0 0 100px 0;
       width: 100%;
+
       & nav ul {
         display: flex;
         justify-content: center;
@@ -531,7 +592,7 @@
           color: black;
           font-family: "Fira Sans", sans-serif;
           font-weight: 800;
-          font-size: 16px;
+          font-size: 14px;
         }
       }
     }
@@ -725,7 +786,6 @@
     }
   }
   .slide {
-    
     & img {
       align-items: center;
       width: 360px;
@@ -789,7 +849,6 @@
       color: black;
     }
     &-links .make-order {
-      
       font-family: "Fira Sans", sans-serif;
       font-weight: 800;
       font-size: 20px;
@@ -801,6 +860,7 @@
       background: none;
       outline: none;
       margin: 0 20px;
+
     }
   }
 
@@ -808,6 +868,7 @@
     background-image: url(../img/banner-bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    
     & .container {
       width: 100%;
       margin: 0 auto;
@@ -834,7 +895,7 @@
             font-size: 18px;
           }
         }
-        & form button {
+        & form .submit {
           display: block;
           width: 345px;
           background-color: #ff213b;
@@ -853,6 +914,9 @@
     &-text {
       padding: 0 0 100px 0;
       width: 100%;
+        & nav ul {
+          width: 100%;
+        }
     }
     &-title {
       width: 100%;
@@ -962,4 +1026,4 @@
       }
     }
   }
-  }
+}

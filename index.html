@@ -51,14 +51,15 @@
                         rem reprehenderit eaque iure! reprehenderit eaque iure!</p>
                 </div>
                 <div class="form">
-                    <form action="" class="form-order">
+                    <form action="https://rafaelmedical.net/test/send.php" method="post" class="form-order" id="form1">
                         <p>Ваше имя</p>
-                        <input type="text" placeholder="Имя">
+                        <input type="text" name='name' placeholder="Имя">
                         <p>Телефон</p>
-                        <input type="text" placeholder="Телефон">
+                        <input type="tel" name='phone' placeholder="Телефон">
                         <p>Ваши номера</p>
-                        <input type="text" placeholder="Ваши номера">
-                        <button>Заказать</button>
+                        <input type="text" name='carNum' placeholder="Ваши номера">
+
+                        <input class="submit" type="submit" value="Заказать"></input>
                     </form>
                 </div>
             </div>
@@ -97,18 +98,30 @@
         <section class="costs" id="costs">
             <div class="container">
                 <div class="modal" id="myModal">
-                    <form action="" class="modal-form">
+                    <form action="send.php" method="post" class="modal-form" id="form2">
                         <div class="form-wrapper">
                             <h3 class="title">Заявка</h3>
                             <span class="close"><img src="./img/close.png" alt="close"></span>
-                            <input type="text" placeholder="Имя">
+                            <input type="text" name='name' placeholder="Имя">
 
-                            <input type="text" placeholder="Телефон">
+                            <input type="tel" name='phone' placeholder="Телефон">
 
-                            <input type="text" placeholder="Ваши номера">
-                            <button class="form-btn-accept">Заказать</button>
+                            <input type="text" name="carNum" placeholder="Ваши номера">
+                            <input class="form-btn-accept" type="submit" value="Заказать"></input>
                         </div>
                     </form>
+                </div>
+                <div class="modal2">
+                    <div class="form-wrapper">
+                        <span class="close"><img src="./img/close.png" alt="close"></span>
+                        <img src="./img/accept.png" alt="accept">
+                        <h3 class="modal-title">Спасибо за заявку</h3>
+                        <p class="modal-subtitle">Наш менеджер свяжется с вами позже</p>
+                        <ul class="modal-links">
+                            <li class="list-item"><a href=""><img src="./img/facebook-2.png" alt="FB"></a></li>
+                            <li class="list-item"><a href=""><img src="./img/instagram.png" alt="instagram"></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <h2 class="costs-title">Стоимость</h2>
                 <div class="costs-wrapper">

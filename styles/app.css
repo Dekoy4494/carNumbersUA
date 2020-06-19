@@ -57,7 +57,7 @@
           font-family: "Muller";
           font-weight: 400;
           font-size: 18px; }
-      .banner .container .form form button {
+      .banner .container .form form .submit {
         width: 345px;
         background-color: #ff213b;
         margin-top: 60px;
@@ -340,6 +340,66 @@
       margin: 0;
       margin-bottom: 30px; }
 
+.modal2 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+  .modal2 .form-wrapper {
+    position: relative;
+    text-align: center;
+    background-image: url(../img/celebrate.png);
+    background-position: center;
+    background-color: white;
+    max-width: 675px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 550px; }
+    .modal2 .form-wrapper span {
+      background: none;
+      border: none;
+      position: absolute;
+      right: 25px;
+      top: 30px;
+      outline: none; }
+    .modal2 .form-wrapper > img {
+      margin: 100px 0; }
+    .modal2 .form-wrapper .modal-title {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 800;
+      font-size: 41px;
+      margin: 0; }
+    .modal2 .form-wrapper p {
+      font-family: "Muller";
+      font-weight: 400;
+      font-size: 22px; }
+    .modal2 .form-wrapper ul {
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      list-style: none;
+      margin-top: 40px; }
+      .modal2 .form-wrapper ul li + li {
+        margin-left: 30px; }
+
 @media screen and (max-width: 767px) {
   .header .container {
     width: 100%;
@@ -441,7 +501,7 @@
           color: black;
           font-family: "Fira Sans", sans-serif;
           font-weight: 800;
-          font-size: 16px; }
+          font-size: 14px; }
     .banner-title {
       width: 100%;
       font-family: "Fira Sans", sans-serif;
@@ -676,7 +736,7 @@
             font-family: "Muller";
             font-weight: 400;
             font-size: 18px; }
-        .banner .container .form form button {
+        .banner .container .form form .submit {
           display: block;
           width: 345px;
           background-color: #ff213b;
@@ -692,6 +752,8 @@
     .banner-text {
       padding: 0 0 100px 0;
       width: 100%; }
+      .banner-text nav ul {
+        width: 100%; }
     .banner-title {
       width: 100%;
       font-family: "Fira Sans", sans-serif;
